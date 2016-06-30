@@ -71,3 +71,29 @@ resources:
     source:
       count: 1
     
+  - name: box-p-scaler
+    type: replicas
+    #integration: shipaws-ecscluster
+    source:
+      count: 1
+      
+  - name: box-p-params #test once more
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
+      
+  - name: box-p-kick #test once more
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
+        
+  - name: env-prod-triton
+    type: replicas
+    #integration: shipaws-ecscluster
+    source:
+      count: 2
+      
