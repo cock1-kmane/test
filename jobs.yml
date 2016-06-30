@@ -15,7 +15,7 @@ jobs:
 
 # CI for dv
   - name: dv-ci
-    type: runCI
+    type: manifest
     steps:
       - GET: dv-repo
       - PUT: dv-img
