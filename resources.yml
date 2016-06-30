@@ -4,7 +4,7 @@ resources:
     integration: cock1-github
     source:
       name: "shiphitchcock1/test_plv2"
-      branch: test
+      branch: test2
 
   - name: dv-repo
     type: gitRepo
