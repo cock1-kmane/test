@@ -3,24 +3,24 @@ resources:
     type: gitRepo
     integration: git
     source:
-      name: harryi3t/box
+      name: RevathiRD/samplePhp
       branch: master
 
   - name: dv-repo
     type: gitRepo
     integration: git
     source:
-      name: harryi3t/dv
+      name: RevathiRD/samplePhp
       branch: master
 
 # Docker Image for BOX
   - name: box-img
     type: image
-    integration: dockerhub
+    integration: docker_integration
     source:
-      name: "harryi3t/box"
+      name: "revathird/img"
       isPull: false
-      tag: "master.9"
+      #tag: "master.9"
 
 # Docker Image Options for BOX
   - name: box-img-opts
@@ -32,11 +32,11 @@ resources:
 # Docker Image for dv
   - name: dv-img
     type: image
-    integration: dockerhub
+    integration: docker_integration
     source:
-      name: "harryi3t/dv"
+      name: "revathird/img"
       isPull: false
-      tag: "master.9"
+      #tag: "master.9"
 
 # Docker Image Options for dv
   - name: dv-img-opts
