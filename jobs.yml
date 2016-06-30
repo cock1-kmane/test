@@ -1,7 +1,7 @@
 jobs:
 # CI for BOX
   - name: box-ci
-    type: manifest
+    type: runCI
     steps:
       - GET: box-repo
       - PUT: box-img
@@ -15,7 +15,7 @@ jobs:
 
 # CI for dv
   - name: dv-ci
-    type: manifest
+    type: runCI
     steps:
       - GET: dv-repo
       - PUT: dv-img
