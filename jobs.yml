@@ -1,7 +1,7 @@
 jobs:
 # CI for BOX
   - name: box-ci
-    type: runCI
+    type: manifest
     steps:
       - GET: box-repo
       - PUT: box-img
