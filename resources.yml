@@ -32,7 +32,7 @@ resources:
 # Docker Image for dv
   - name: dv-img
     type: image
-    integration: docker_integration
+    integration: cock1-hub
     source:
       name: "shiphitchcock1/testsamplenode"
       isPull: false
