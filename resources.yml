@@ -20,7 +20,7 @@ resources:
     source:
       name: "revathird/img"
       isPull: false
-      tag: "latest"
+      tag: "master.28.1"
 
 # Docker Image Options for BOX
   - name: box-img-opts
@@ -36,7 +36,7 @@ resources:
     source:
       name: "revathird/img"
       isPull: false
-      tag: "latest"
+      tag: "master.28.1"
 
 # Docker Image Options for dv
   - name: dv-img-opts
