@@ -1,52 +1,52 @@
 resources:
   - name: box-repo
     type: gitRepo
-    integration: git
+    integration: cock1-github
     source:
-      name: RevathiRD/samplePhp
-      branch: master
+      name: "shiphitchcock1/test_plv2"
+      branch: test
 
   - name: dv-repo
     type: gitRepo
-    integration: git
+    integration: cock1-github
     source:
-      name: RevathiRD/samplePhp
-      branch: master
+      name: "shiphitchcock1/test_plv2"
+      branch: testput
 
 # Docker Image for BOX
   - name: box-img
     type: image
-    integration: docker_integration
+    integration: cock1-hub
     source:
-      name: "revathird/img"
+      name: "shiphitchcock1/sample_python"
       isPull: false
-      tag: "master.28.1"
+      tag: "latest"
 
 # Docker Image Options for BOX
   - name: box-img-opts
     type: dockerOptions
     source:
-      memory: 64
-      cpu-shares: 512
+      memory: 32
+      cpu-shares: 8
 
 # Docker Image for dv
   - name: dv-img
     type: image
     integration: docker_integration
     source:
-      name: "revathird/img"
+      name: "shiphitchcock1/testsamplenode"
       isPull: false
-      tag: "master.28.1"
+      tag: "latest"
 
 # Docker Image Options for dv
   - name: dv-img-opts
     type: dockerOptions
     source:
-      memory: 64
-      cpu-shares: 512
+      memory: 16
+      cpu-shares: 4
   
   - name: s1
     type: dockerOptions
     source:
-      memory: 64
-      cpu-shares: 512
+      memory: 8
+      cpu-shares: 0
