@@ -27,3 +27,16 @@ jobs:
       - GET: dv-img
       - GET: dv-img-opts
       - GET: s1
+      
+  - name: box-test-triton
+    type: manifest
+    steps:
+      - GET: box-t-params
+      - GET: box-man
+      
+  - name: dv-test
+    type: manifest
+    steps:
+      - GET: dv-man
+      - GET: dv-params
+      - GET: env-test-triton
