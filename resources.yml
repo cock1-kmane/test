@@ -50,3 +50,24 @@ resources:
     source:
       memory: 8
       cpu-shares: 0
+      
+  - name: box-t-params #test once more
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
+        
+  - name: dv-params #test once more
+    type: params
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
+        
+  - name: env-test-triton
+    type: replicas
+    #integration: shipaws-ecscluster
+    source:
+      count: 1
+    
