@@ -40,3 +40,13 @@ jobs:
       - GET: dv-man
       - GET: dv-params
       - GET: env-test-triton
+      
+  - name: box-prod-triton
+    type: manifest
+    steps:
+      - GET: box-test-triton
+      - GET: box-p-scaler
+      - GET: box-p-params
+      - GET: box-p-kick
+      - GET: env-prod-triton
+      
